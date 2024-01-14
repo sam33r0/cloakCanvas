@@ -9,6 +9,7 @@ function LogoutBtn() {
     const logoutHandler=()=>{
         authService.logout().then(()=>{
             dispath(logout());
+            navigate("/login");
         })
     }
   return (
